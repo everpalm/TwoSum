@@ -8,6 +8,7 @@
 
 /* Begin PBXFileReference section */
 		9A886A0322EDE797004B54F4 /* test.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test.py; sourceTree = "<group>"; };
+		9A886A0522F32B98004B54F4 /* test_twosum.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_twosum.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -15,6 +16,7 @@
 			isa = PBXGroup;
 			children = (
 				9A886A0322EDE797004B54F4 /* test.py */,
+				9A886A0522F32B98004B54F4 /* test_twosum.py */,
 			);
 			sourceTree = "<group>";
 		};
