@@ -1,11 +1,18 @@
 class Solution:
     def twoSum(self, nums, target):
+        complement={}
         for nums_count in range(len(nums)):
-            for x_count in range(nums_count+1, len(nums), 1):
-                if target == nums[x_count] + nums[nums_count]:
-                    return [nums_count, x_count]
+            if (target-nums[nums_count]) not in complement:
+                print(target, "-nums[",nums_count,"] = ", target-nums[nums_count])
+                complement[nums[nums_count]]=nums_count
+                print("1. ","complement[",nums[nums_count],"] = ", nums_count)
+            else:
+                print(target, "-nums[",nums_count,"] = ", target-nums[nums_count])
+                print("2. ","dic[",target-nums[nums_count],"] = ", nums_count)
+                return [complement[target-nums[nums_count]],nums_count]
 
 if __name__ == "__main__":
     my_solution = Solution
-    my_output = my_solution().twoSum([-1,-2,-3,-4,-5], -8)
+    my_output = my_solution().twoSum([-1,-2,-3,-4,-5], -3)
     print(my_output)
+
